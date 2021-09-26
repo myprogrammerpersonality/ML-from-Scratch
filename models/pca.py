@@ -17,6 +17,6 @@ def PCA(X_scaled , num_components):
     eigenvector_subset = sorted_eigenvectors[:,0:num_components]
      
     #Step-4
-    X_reduced = np.dot(eigenvector_subset.transpose() , X_scaled.transpose() ).transpose()
+    X_reduced = np.dot(eigenvector_subset.transpose(), X_scaled.transpose()).transpose()
      
     return X_reduced
